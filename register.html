@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    <style>
+    #div1 {
+        width: 350px;
+        height: 350px;
+        padding: 10px;
+        border: 1px solid #000000;
+    }
+    .drag-over {
+    border: dashed 3px red;
+}
+    </style>
+    </head>
+    <body>
+        <h1>Search</h1>
+        <form action="https://www.youtube.com/results" method="get">
+            <input class="searchbox" placeholder="Search..." name="search_query"
+                type="text" required><br>
+            <button style="margin-top: 10px;">Search</button>
+        </form><br>
+        <h1>Video</h1>
+        <iframe width="560" height="315"
+            src="https://www.youtube.com/embed/mHrtsCGR8yk?si=bx4fjlz9dWddKHvw"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+        <br>
+        <h1>Geolocation</h1>
+        <button onclick="getLocation()">Share you geolocation</button>
+        <p id="loc"></p>
+
+        <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+        
+        </div>
+        <img id="drag1" src="https://th.bing.com/th/id/OIP.-UVBEbCvz2bWe7Iwx7NJPQHaNJ?rs=1&pid=ImgDetMain" draggable="true" ondragstart="drag(event)" width="336" height="336">
+
+
+    </body>
+    <script>
+    const x = document.getElementById("loc");
+    
+    function getLocation() {
+      if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(showPosition);
+      } else { 
+        x.innerHTML = "Geolocation is not supported by this browser.";
+      }
+    }
+    const item = document.querySelector('.item');
+
+
+
+
+    </script>
+    <script>
+        function allowDrop(ev) {
+          ev.preventDefault();
+        }
+        
+        function drag(ev) {
+          ev.dataTransfer.setData("text", ev.target.id);
+        }
+        
+        function drop(ev) {
+          ev.preventDefault();
+          var data = ev.dataTransfer.getData("text");
+          ev.target.appendChild(document.getElementById(data));
+        }
+        </script>
+
+</html>
