@@ -1,0 +1,98 @@
+@function index($scale) {
+  @return calc(#{calc(1vw + 1vh)} * #{$scale});
+}
+
+$border-radius: 5px;
+$font-stack: Helvetica, sans-serif;
+$text-color: #333;
+
+p.comment{
+  font-family: $font-stack;
+  color: white;
+}
+
+p {
+  font-family: $font-stack;
+  color: $text-color;
+
+}
+
+h2.w3-wide {
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
+.w3-ul {
+  border-radius: $border-radius;
+  li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 16px;
+  }
+}
+
+.w3-button {
+  border-radius: $border-radius;
+}
+
+img.w3-hover-opacity {
+  border-radius: $border-radius $border-radius 0 0;
+  &:hover {
+    opacity: 0.6;
+  }
+}
+
+.cards {
+  .w3-white {
+    border-radius: 0 0 $border-radius $border-radius;
+  }
+}
+
+span {
+  border-radius: $border-radius;
+}
+
+form {
+  input {
+    border-radius: $border-radius;
+  }
+}
+
+// Animation fade effect
+@keyframes fadeEffect {
+  from {opacity: 0.8;}
+  to {opacity: 1;}
+}
+
+.mySlides {
+  animation-name: fadeEffect;
+  animation-duration: 1s;
+}
+
+// Animation smooth scroll
+* {
+  scroll-behavior: smooth;
+}
+
+// prev and next button animation
+.prev {
+  cursor: pointer;
+  position: absolute;
+  top: index(24);
+  left: index(1);
+  color: white;
+  font-weight: bold;
+  font-size: 30px;
+  user-select: none;
+}
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: index(24);
+  right: index(1);
+  color: white;
+  font-weight: bold;
+  font-size: 30px;
+  user-select: none;
+}

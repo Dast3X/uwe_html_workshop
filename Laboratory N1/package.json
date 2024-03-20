@@ -1,0 +1,22 @@
+{
+  "name": "wadt",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js",
+    "compile:sass": "sass sass/styles.scss express/css/styles.css",
+    "watch:sass": "sass --watch sass/styles.scss:express/css/styles.css"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "jquery": "^3.7.1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^3.0.2",
+    "sass": "^1.72.0"
+  }
+}

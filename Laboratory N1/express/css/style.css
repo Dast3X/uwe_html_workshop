@@ -1,0 +1,88 @@
+p.comment {
+  font-family: Helvetica, sans-serif;
+  color: white;
+}
+
+p {
+  font-family: Helvetica, sans-serif;
+  color: #333;
+}
+
+h2.w3-wide {
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
+.w3-ul {
+  border-radius: 5px;
+}
+.w3-ul li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 16px;
+}
+
+.w3-button {
+  border-radius: 5px;
+}
+
+img.w3-hover-opacity {
+  border-radius: 5px 5px 0 0;
+}
+img.w3-hover-opacity:hover {
+  opacity: 0.6;
+}
+
+.cards .w3-white {
+  border-radius: 0 0 5px 5px;
+}
+
+span {
+  border-radius: 5px;
+}
+
+form input {
+  border-radius: 5px;
+}
+
+@keyframes fadeEffect {
+  from {
+    opacity: 0.8;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.mySlides {
+  animation-name: fadeEffect;
+  animation-duration: 1s;
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
+.prev {
+  cursor: pointer;
+  position: absolute;
+  top: calc(calc(1vw + 1vh) * 24);
+  left: calc(calc(1vw + 1vh) * 1);
+  color: white;
+  font-weight: bold;
+  font-size: 30px;
+  user-select: none;
+}
+
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: calc(calc(1vw + 1vh) * 24);
+  right: calc(calc(1vw + 1vh) * 1);
+  color: white;
+  font-weight: bold;
+  font-size: 30px;
+  user-select: none;
+}
+
+/*# sourceMappingURL=style.css.map */
