@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <h2 class="text-center text-success mt-3">Welcome back, {{user.username}}!</h2>
+        <div class="col-md-4 ">
+            <div class="card shadow p-4 mt-5">
+                <div class="card-body text-center">
+                    <img src="https://blimpp.com/wp-content/uploads/2020/05/avatars-characters_02.png"
+                         class="img-fluid mb-3" style="max-width: 200px;" alt="Profile Picture">
+                    <h1 class="h4 mb-2">{{ user.username }}</h1>
+                    <p>{{ user.email }}</p>
+                    <p class="text-muted">{{ user.date_joined.date }}</p>
+                    {% if user.is_superuser %}
+                    <p class="text-danger">Admin</p>
+                    {% else %}
+                    <p class="text-warning">User</p>
+                    {% endif %}
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#userModal">
+                        Show All Users
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+{% include 'users.html' %}
+
+{% endblock content %}
