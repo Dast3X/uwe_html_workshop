@@ -1,0 +1,6 @@
+![image](https://github.com/Dast3X/uwe_html_workshop/assets/65315002/2bde3d1d-0430-482b-b947-1ecdb6d33def)
+![image](https://github.com/Dast3X/uwe_html_workshop/assets/65315002/7e79c869-eacf-45f6-8aa8-2e10fc39a4cd)
+![image](https://github.com/Dast3X/uwe_html_workshop/assets/65315002/4899b348-4008-441a-b2a0-b7a4a63f9555)
+![image](https://github.com/Dast3X/uwe_html_workshop/assets/65315002/2953fabd-96c8-4ca1-86dd-627f3eff125a)
+![image](https://github.com/Dast3X/uwe_html_workshop/assets/65315002/5598f8bc-4546-44c2-9921-3f250a166bad)
+![image](https://github.com/Dast3X/uwe_html_workshop/assets/65315002/3ce9d854-515d-403a-ab17-d04bc3cc1a8c)
